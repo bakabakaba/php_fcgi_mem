@@ -11,7 +11,7 @@
 
 <font style="color:rgb(51, 51, 51);">ii、需要从phpinfo里查看auto_append_file的值是否被修改（由于PHP-FPM存在多个进程，上述步骤最好多次发包，保证每个进程都被注入内存马）</font>
 
-3、最后直接使用蚁剑连接，密码test（或者自行修改文件里的base64的内容）
+3、最后直接使用蚁剑连接任意php路由，密码test（需要页面垃圾数据不要太多，或者传参test=system("id");的形式手动执行命令，再或者自行修改文件里的base64的内容）
 
 ## 0x03 参考
 [https://xz.aliyun.com/t/11651](https://xz.aliyun.com/t/11651)
